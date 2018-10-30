@@ -1,0 +1,33 @@
+{
+  "name": "ui-assessment",
+  "version": "1.0.0",
+  "description": "Small project for UI assessment",
+  "main": "index.js",
+  "author": "Alan Siegler",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./packages/styles/assets/fonts/"
+  },
+  "devDependencies": {
+    "@storybook/react": "3.4.11",
+    "babel-core": "6.26.3",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-runtime": "6.26.0",
+    "css-loader": "1.0.1",
+    "node-sass": "4.9.4",
+    "react-hot-loader": "4.3.11",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-root-import": "6.1.0",
+    "breakpoint-sass": "2.7.1",
+    "classnames": "2.2.6",
+    "normalize.scss": "0.1.0",
+    "rc-checkbox": "^2.1.5",
+    "react": "16.6.0",
+    "react-dom": "16.6.0"
+  }
+}

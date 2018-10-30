@@ -1,0 +1,16 @@
+// Footer styles
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 299px;
+  bottom: 0;
+  background-color: $colors-night-blue;
+
+  @include breakpoint($bp--md) {
+    height: 240px;
+  }
+
+  @include breakpoint($bp--lg) {
+    height: 212px;
+  }
+}

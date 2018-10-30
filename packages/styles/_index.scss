@@ -1,0 +1,19 @@
+// Breakpoint sizes
+$bp--sm: 320px;
+$bp--md: 768px;
+$bp--lg: 1024px;
+$bp--xl: 1400px;
+
+// Note: Import ordering important here ↴
+@import './extensions';
+@import './config/utilities';
+@import './config/colors';
+@import './config/typography';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $colors-grey-dark;
+}

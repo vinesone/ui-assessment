@@ -1,0 +1,26 @@
+// Form full name styles
+.form-full-name {
+  .input {
+    width: 105px;
+    margin-bottom: 13px;
+
+    @include breakpoint($bp--md) {
+      display: inline;
+      width: 137px;
+    }
+
+    @include breakpoint($bp--xl) {
+      width: 187px;
+    }
+
+    &:last-of-type {
+      margin-left: 10px;
+    }
+  }
+
+  .disclaimer {
+    @include breakpoint($bp--md) {
+      width: 331px;
+    }
+  }
+}

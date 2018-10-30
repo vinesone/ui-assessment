@@ -1,0 +1,43 @@
+// Disclaimer styles
+.disclaimer {
+  position: relative;
+  text-align: left;
+  color: $colors-grey;
+  cursor: pointer;
+
+  // to align with input width
+  @include breakpoint($bp--md) {
+    width : 374px;
+  }
+
+  @include breakpoint($bp--lg) {
+    width: 380px;
+  }
+}
+
+.disclaimer__checkbox-column {
+  position: absolute;
+  top: 0;
+  left: 13px;
+
+  @include breakpoint($bp--md) {
+    left: 3px;
+  }
+}
+
+.disclaimer__label {
+  @include typeface-azo-light;
+  color: $colors-grey;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  padding-left: 35px;
+
+  @include breakpoint($bp--md) {
+    padding-left: 22px;
+  }
+}
+
+.disclaimer__link {
+  text-decoration: underline;
+  color: $colors-grey;
+}

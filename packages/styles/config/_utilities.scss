@@ -1,0 +1,55 @@
+// Utility Vars
+$element-border-radius: 5px;
+
+@mixin hidden() {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin visible() {
+  display: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+// Utils classes
+.utils-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.utils-hidden--mobile {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  @include breakpoint($bp--md) {
+    display: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Form container
+.form-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @include breakpoint($bp--md) {
+    width: 555px;
+  }
+
+  @include breakpoint($bp--lg) {
+    width: 560px;
+  }
+
+  @include breakpoint($bp--xl) {
+    width: 650px;
+  }
+}
+
+
+

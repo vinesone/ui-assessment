@@ -1,0 +1,33 @@
+// Input styles
+.input {
+  @include typeface-azo;
+  font-size: 1.4rem;
+  height: 40px;
+  background-color: rgba($colors-grey-medium, .17);
+  border-radius: $element-border-radius;
+  color: rgba($colors-white, .4);;
+  border: none;
+  padding: 0 15px;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+
+  @include breakpoint($bp--md) {
+    font-size: 2.4rem;
+    padding: 0 24px;
+    height: 45px;
+  }
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input--hasError {
+  box-shadow: 0 1px 1px rgba($colors-black, 0.075) inset, 0 0 8px rgba($colors-red, 1);
+}
+
+.input--isValid {
+  box-shadow: 0 1px 1px rgba($colors-black, 0.075) inset, 0 0 8px rgba($colors-sea-green, 1);
+}
+
+
+

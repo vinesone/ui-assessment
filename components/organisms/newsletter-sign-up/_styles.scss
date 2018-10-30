@@ -1,0 +1,193 @@
+.newsletter-sign-up {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @include breakpoint($bp--md) {
+    width: 555px;
+  }
+
+  @include breakpoint($bp--lg) {
+    width: 100%;
+  }
+}
+
+.newsletter-sign-up__cta {
+  display: block;
+  font-size: 3.6rem;
+  margin-bottom: 2px;
+  padding-top: 25px;
+
+  @include breakpoint($bp--md) {
+    font-size: 5rem;
+  }
+
+  @include breakpoint($bp--lg) {
+    display: inline-block;
+    font-size: 6rem;
+    margin-right: 30px;
+    vertical-align: top;
+    padding-top: 85px;
+  }
+
+  @include breakpoint($bp--xl) {
+    font-size: 8rem;
+    margin-right: 70px;
+    padding-top: 77px;
+  }
+}
+
+.newsletter__message {
+  @include typeface-azo-bold;
+  display: block;
+  color: $colors-shipyard-blue;
+  font-size: 1.6rem;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  @include breakpoint($bp--md) {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    margin-left: .4rem;
+  }
+
+  @include breakpoint($bp--xl) {
+    font-size: 2.4rem;
+  }
+}
+
+.newsletter-sign-up__capture {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+
+  @include breakpoint($bp--lg) {
+    text-align: left;
+    padding-top: 44px;
+  }
+}
+
+// State specific styles
+.newsletter-sign-up--step-3 {
+  .newsletter-sign-up__cta {
+    font-size: 3.6rem;
+    padding-top: 58px;
+    margin-bottom: 10px;
+
+    @include breakpoint($bp--md) {
+      font-size: 5rem;
+      padding-top: 35px;
+    }
+
+    @include breakpoint($bp--lg) {
+      display: inline;
+      position: relative;
+      font-size: 6rem;
+      top: 65px;
+      margin-right: 36px;
+    }
+
+    @include breakpoint($bp--xl) {
+      font-size: 8rem;
+      top: 65px;
+      margin-right: 75px;
+    }
+  }
+
+  .newsletter-sign-up__capture {
+    @include breakpoint($bp--md) {
+      display: block;
+    }
+
+    @include breakpoint($bp--lg) {
+      display: inline-block;
+      position: relative;
+      top: 61px;
+      padding-top: 0;
+    }
+
+    @include breakpoint($bp--xl) {
+      top: 70px;
+    }
+  }
+
+  .newsletter__message {
+    font-size: 2.4rem;
+
+    @include breakpoint($bp--md) {
+      display: inline;
+      font-size: 2.8rem;
+      margin: 0;
+      width: 100%;
+      vertical-align: top;
+
+      &:last-of-type {
+        margin-left: .5rem;
+      }
+    }
+
+    @include breakpoint($bp--lg) {
+
+    }
+  }
+
+  .newsletter__message__action {
+    @include typeface-azo-light;
+    font-size: 1.8rem;
+    padding-top: 21px;
+    width: 260px;
+
+    @include breakpoint($bp--md) {
+      padding-top: 15px;
+      width: 100%;
+      font-size: 2rem;
+    }
+
+    @include breakpoint($bp--lg) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+// ===================================================
+// This is to handle exception on Tablet P for step 2
+// Please see README in project root
+// ===================================================
+.newsletter-sign-up--step-1 {
+  .email-exception--tablet-p {
+    @include visible();
+  }
+
+  .name-exception--tablet-p {
+    @include hidden();
+  }
+}
+
+.newsletter-sign-up--step-2 {
+  .email-exception--tablet-p {
+    @include hidden();
+  }
+
+  @include breakpoint($bp--md) {
+    .email-exception--tablet-p {
+      @include visible();
+    }
+    .name-exception--tablet-p {
+      @include hidden();
+    }
+  }
+
+  @include breakpoint($bp--lg) {
+    .email-exception--tablet-p {
+      @include hidden();
+    }
+
+    .name-exception--tablet-p {
+      @include visible();
+    }
+  }
+}

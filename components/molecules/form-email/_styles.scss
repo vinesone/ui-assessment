@@ -1,0 +1,29 @@
+// Form email styles
+.form-email {
+  padding: 0 20px;
+
+  @include breakpoint($bp--md) {
+    padding: 0;
+  }
+
+  .input {
+    width: 250px;
+    display: block;
+    margin-bottom: 13px;
+
+    // Move to context
+    @include breakpoint($bp--md) {
+      display: inline-block;
+      width: 331px;
+      margin: 0;
+    }
+
+    @include breakpoint($bp--lg) {
+      width: 324px;
+    }
+
+    @include breakpoint($bp--xl) {
+      width: 432px;
+    }
+  }
+}

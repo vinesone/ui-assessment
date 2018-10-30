@@ -1,0 +1,29 @@
+// Button styles
+.button {
+  @include typeface-azo-bold;
+  background-color: $colors-action-red;
+  border: none;
+  border-radius: $element-border-radius;
+  color: $colors-white;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 1.6rem;
+  vertical-align: top;
+  width: 280px;
+  margin-bottom: 10px;
+  height: 40px;
+  text-transform: uppercase;
+  padding: 0;
+
+  @include breakpoint($bp--md) {
+    height: 45px;
+    width: 149px;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+}
+
+.button--deactivated {
+  opacity: .85;
+  cursor: initial;
+}

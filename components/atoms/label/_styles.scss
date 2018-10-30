@@ -1,0 +1,6 @@
+// Lable styles
+.label {
+  @include typeface-elaine;
+  color: $colors-mint-green;
+  font-size: 6rem;
+}
