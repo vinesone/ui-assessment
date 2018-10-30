@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Input component (Atom)
+ * Label component (Atom)
  *s
  * @param {Object} props - React props
  * @param {Children} [props.children] - Optional string for label

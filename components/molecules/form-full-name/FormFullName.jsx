@@ -74,11 +74,12 @@ class FormFullName extends React.Component {
   /**
    * Handles calling final submit on form
    * once the form is in a valid state
-   * it passes an object of
-   * first name and last name from user input
+   * it passes a user object with
+   * { firstName: *. lastName: * }
+   * from user input
    *
    * @param {Object} event - Synthetic event from input change
-   * @returns {Object} undefined
+   * @returns {Object} User object
    *
    */
   handleSubmit = (event) => {

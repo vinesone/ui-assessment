@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+
 /**
  * Input
  *
@@ -30,7 +31,8 @@ export default class Input extends React.Component {
   }
 
   /**
-   * Handles focus - mostly there to clear default value
+   * Handles focus
+   * Clears placeholder value
    *
    * @returns {undefined} undefined
    *
@@ -64,8 +66,8 @@ export default class Input extends React.Component {
   }
 
   /**
-   * Handles input blur - mostly for restoring
-   * default value
+   * Handles input blur
+   * Restores placeholder value
    *
    * @param {Object} event - Synthetic event from input change
    * @returns {undefined} undefined

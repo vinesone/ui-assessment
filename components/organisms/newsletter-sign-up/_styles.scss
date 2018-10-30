@@ -1,3 +1,4 @@
+// Newsletter Sign Up styles
 .newsletter-sign-up {
   position: relative;
   width: 320px;
@@ -128,10 +129,6 @@
       &:last-of-type {
         margin-left: .5rem;
       }
-    }
-
-    @include breakpoint($bp--lg) {
-
     }
   }
 

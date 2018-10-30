@@ -1,16 +1,16 @@
 import React from 'react';
 import classnames from 'classnames';
 
-  /**
-   * Since the design called for custom line breaks beyond
-   * the natural document flow: This helper creates visual duples
-   *
-   *
-   * @param {String} className - CSS class name
-   * @param {Boolean} isVisible - True if visible css class name should be applied
-   * @returns {React.node} React node span
-   *
-   */
+/**
+ * Since the design called for custom line breaks beyond
+ * the natural document flow: This helper creates visual duples
+ *
+ *
+ * @param {String} className - CSS class name
+ * @param {Boolean} isVisible - True if visible css class name should be applied
+ * @returns {React.node} React node span
+ *
+ */
 const getMessageGroup = (className, isVisible, line1, line2) => (
   <span className={classnames('newsletter__message-group', className, { 'utils-hidden': !isVisible })}>
     <span className="newsletter__message" dangerouslySetInnerHTML={{ __html: line1 }}/>

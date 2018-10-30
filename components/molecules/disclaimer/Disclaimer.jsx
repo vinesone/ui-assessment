@@ -31,8 +31,8 @@ class Disclaimer extends React.Component {
   }
 
    /**
-   * Handles update of state when the state
-   * of check box has been updated
+   * Handles update of state on
+   * checkbox update
    *
    * @param {Object} event - Synthetic event from input change
    * @returns {undefined} undefined
@@ -47,8 +47,8 @@ class Disclaimer extends React.Component {
   }
 
   /**
-   * Handles toggling checkbox's state to allow
-   * the whole disclaimer text field to be clickable
+   * Handles toggling checkbox's state from
+   * clicking on disclaimer text
    *
    * @param {Object} event - Synthetic event from input change
    * @returns {undefined} undefined

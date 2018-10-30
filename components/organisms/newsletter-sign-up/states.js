@@ -1,13 +1,12 @@
-  /**
-   * States - This represents the internal states states
-   * of the main Newsletter signup form. It manages:
-   *
-   * • Step number - (applied to parent class)
-   * • Text for the CTA
-   * • Visibility of React Elements
-   *
-   * Should be updated to be handled with Redux store
-   */
+/**
+ * States - This represents the internal states
+ * of the main Newsletter signup form. It manages:
+ * • Step number - (applied to parent class)
+ * • Text for the CTA
+ * • Visibility of React Elements
+ *
+ * #TODO: Update with Redux store
+ */
 export const STATES = {
     "EMAIL_COLLECTION": {
       'step': 1,
