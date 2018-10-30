@@ -5,8 +5,6 @@
 Greetings! Once compiled, this project will run a storybook application
 that will showcase the `newsletter-signup-component` and all of it's atomic elements.
 
-This project ended up being larger than expected, but I opted to ship it fully completed over having pseudo code. 
-
 ## Building Project
 
 Steps to get this project running:
@@ -25,17 +23,17 @@ impacted the final code. Normally, I would have brought this up with the design 
 #### 1. Line breaks in the text above the form inputs:
 - The design called for line breaks that don't work in a
 standard document flow.
-> _**solution:** Created message groups to force text on two lines_
+> _**solution:** Created component to force text on two lines_
 
 #### 2. Punctuation inconsistent across screens & break points.
-- `Sign up for the TLC newsletter` drops it’s period on the Tablet Portrait breakpoint and below.
+- `Sign up for the TLC newsletter` drops it’s period on the `Tablet Portrait` breakpoint and below.
 - Puncation doesn’t drop on `Almost done` message or Congrats
 > _**solution:** wrapped `.` in `<span>`to target and control element_
 
 #### 3. Messaging different across states
 - `Almost done` messaging is visible on mobile,
-but not on Tablet Portrait & then reappears on Tablet Landscape and above. On Tablet portrait it shows the messaging from the previous email capture screen.
-> _**solution:** This was the trickiest of the of them all to fix. The fix was to add the state to the outer most container: then show and hide the elements depending on breakpoint, and screen step_
+but not on Tablet Portrait & then reappears on `Tablet Landscape` and above. On `Tablet portrait` it shows the messaging from the previous email capture screen.
+> _**solution:** The fix was to add the state to the outer most container: then show and hide the elements depending on breakpoint, and screen step_
 
 #### 4. No Error states in design
 > _**solution:** Input highlight states, and disabled button state_
