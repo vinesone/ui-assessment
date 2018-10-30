@@ -26,13 +26,13 @@ standard document flow.
 > _**solution:** Created component to force text on two lines_
 
 #### 2. Punctuation inconsistent across screens & break points.
-- `Sign up for the TLC newsletter` drops it’s period on the `Tablet Portrait` breakpoint and below.
+- `Sign up for the TLC newsletter` drops it’s period on the _tablet-portrait_ breakpoint and below.
 - Puncation doesn’t drop on `Almost done` message or Congrats
 > _**solution:** wrapped `.` in `<span>`to target and control element_
 
 #### 3. Messaging different across states
 - `Almost done` messaging is visible on mobile,
-but not on Tablet Portrait & then reappears on `Tablet Landscape` and above. On `Tablet portrait` it shows the messaging from the previous email capture screen.
+but not on Tablet Portrait & then reappears on _tablet-landscape_ and above. On _tablet-portrait_ it shows the messaging from the previous email capture screen.
 > _**solution:** The fix was to add the state to the outer most container: then show and hide the elements depending on breakpoint, and screen step_
 
 #### 4. No Error states in design
